@@ -6,6 +6,43 @@ Shirube is a standalone, hybrid desktop application designed to bridge the gap b
 
 ---
 
+<div align="center">
+  <img src="YOUR_HERO_IMAGE_LINK_HERE.png" alt="Shirube Library View" width="850">
+  <p><i>Your entire Japanese immersion library in one beautiful, offline workspace.</i></p>
+</div>
+
+<br>
+
+## 📖 Read, Mine, and Master
+Drop in any game script, EPUB, or subtitle file. Shirube automatically generates furigana and provides instant, offline dictionary lookups. Never lose your context again.
+
+<div align="center">
+  <img src="YOUR_STUDY_ROOM_IMAGE_LINK_HERE.png" alt="Shirube Study Room and Hover Dictionary" width="850">
+  <p><i>One-click SRS mining with integrated JLPT data, audio generation, and automatic context tracking.</i></p>
+</div>
+
+<br>
+
+## 📊 The Command Center
+Track your exact immersion time, vocabulary growth, and daily mining habits with a gorgeous, GitHub-style activity heatmap and Jōyō/Kyōiku kanji mastery charts.
+
+<div align="center">
+  <img src="YOUR_DASHBOARD_IMAGE_LINK_HERE.png" alt="Shirube Analytics Dashboard" width="850">
+  <p><i>Visualize your fluency journey across N5-N1 JLPT levels and real-time media statuses.</i></p>
+</div>
+
+<br>
+
+## ⚡ Power-User Tools
+Built-in WaniKani-style Spaced Repetition and native Discord Rich Presence integration keep you accountable and connected to the community.
+
+| Built-in Spaced Repetition | Discord Rich Presence |
+| :---: | :---: |
+| <img src="YOUR_SRS_IMAGE_LINK_HERE.png" width="400" alt="SRS Flashcard"> | <img src="YOUR_DISCORD_IMAGE_LINK_HERE.png" width="400" alt="Discord Status"> |
+| *Level up your vocabulary with localized, high-fidelity VOICEVOX audio and smart typo-forgiveness.* | *Show off your current immersion media, elapsed time, and daily mined cards automatically.* |
+
+<br>
+
 ## ✨ Features
 
 * **Zero-Config Portability:** Shirube runs entirely offline. The massive 2.3GB Japanese dictionary is heavily compressed and embedded directly into the app, meaning there are no messy setup wizards or databases to configure.
