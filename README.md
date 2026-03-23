@@ -1,4 +1,4 @@
-# 🌸 Shirube V3
+# 🌸 Shirube
 
 **The Ultimate Offline Japanese Immersion & Mining Environment**
 
@@ -45,7 +45,7 @@ Built-in WaniKani-style Spaced Repetition and native Discord Rich Presence integ
 
 <div align="center">
   <h3>🌸 Your Entire Japanese World, Anywhere in the House</h3>
-  <p>Read on the couch, mine from your iPad, or review your cards on your phone. Shirube V3 turns your PC into a hybrid immersion server, seamlessly adapting to every screen.</p>
+  <p>Read on the couch, mine from your iPad, or review your cards on your phone. Shirube turns your PC into a hybrid immersion server, seamlessly adapting to every screen.</p>
 </div>
 
 <div align="center">
