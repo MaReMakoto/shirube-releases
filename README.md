@@ -27,7 +27,7 @@ Drop in any game script, EPUB, or subtitle file. Shirube automatically generates
 Track your exact immersion time, vocabulary growth, and daily mining habits with a gorgeous, GitHub-style activity heatmap and Jōyō/Kyōiku kanji mastery charts.
 
 <div align="center">
-  <img src="YOUR_DASHBOARD_IMAGE_LINK_HERE.png" alt="Shirube Analytics Dashboard" width="850">
+  <img src="https://github.com/user-attachments/assets/f744eee4-cccb-443f-baa0-b9f8c626395c" alt="Shirube Analytics Dashboard" width="850">
   <p><i>Visualize your fluency journey across N5-N1 JLPT levels and real-time media statuses.</i></p>
 </div>
 
@@ -38,7 +38,7 @@ Built-in WaniKani-style Spaced Repetition and native Discord Rich Presence integ
 
 | Built-in Spaced Repetition | Discord Rich Presence |
 | :---: | :---: |
-| <img src="YOUR_SRS_IMAGE_LINK_HERE.png" width="400" alt="SRS Flashcard"> | <img src="YOUR_DISCORD_IMAGE_LINK_HERE.png" width="400" alt="Discord Status"> |
+| <img src="https://github.com/user-attachments/assets/9ee47c29-7820-4a58-acd8-8173b5ccdd72" width="400" alt="SRS Flashcard"> | <img src="https://github.com/user-attachments/assets/9be604bf-86a7-4163-8a8d-088297067852" width="400" alt="Discord Status"> |
 | *Level up your vocabulary with localized, high-fidelity VOICEVOX audio and smart typo-forgiveness.* | *Show off your current immersion media, elapsed time, and daily mined cards automatically.* |
 
 <br>
