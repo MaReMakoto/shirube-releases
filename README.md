@@ -43,6 +43,18 @@ Built-in WaniKani-style Spaced Repetition and native Discord Rich Presence integ
 
 <br>
 
+<div align="center">
+  <h3>🌸 Your Entire Japanese World, Anywhere in the House</h3>
+  <p>Read on the couch, mine from your iPad, or review your cards on your phone. Shirube V3 turns your PC into a hybrid immersion server, seamlessly adapting to every screen.</p>
+</div>
+
+<div align="center">
+  <img src="YOUR_CROSS_PLATFORM_ECOSYSTEM_BANNER_LINK_HERE.png" alt="Shirube Cross-Platform Ecosystem: Monitor, iPad, and iPhone Views" width="950">
+  <p><i>The native desktop experience adapted to the device in your hand. PC handles the data, mobile devices handle the immersion.</i></p>
+</div>
+
+<br>
+
 ## ✨ Features
 
 * **Zero-Config Portability:** Shirube runs entirely offline. The massive 2.3GB Japanese dictionary is heavily compressed and embedded directly into the app, meaning there are no messy setup wizards or databases to configure.
