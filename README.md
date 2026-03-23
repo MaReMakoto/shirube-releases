@@ -17,7 +17,7 @@ Shirube is a standalone, hybrid desktop application designed to bridge the gap b
 Drop in any game script, EPUB, or subtitle file. Shirube automatically generates furigana and provides instant, offline dictionary lookups. Never lose your context again.
 
 <div align="center">
-  <img src="YOUR_STUDY_ROOM_IMAGE_LINK_HERE.png" alt="Shirube Study Room and Hover Dictionary" width="850">
+  <img src="https://github.com/user-attachments/assets/68ae031c-af9e-4da7-9807-cbee75465140" alt="Shirube Study Room and Hover Dictionary" width="850">
   <p><i>One-click SRS mining with integrated JLPT data, audio generation, and automatic context tracking.</i></p>
 </div>
 
