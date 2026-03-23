@@ -7,7 +7,7 @@ Shirube is a standalone, hybrid desktop application designed to bridge the gap b
 ---
 
 <div align="center">
-  <img src="YOUR_HERO_IMAGE_LINK_HERE.png" alt="Shirube Library View" width="850">
+  <img src="https://github.com/user-attachments/assets/e8355f55-57f1-4f4f-9869-173076387a20" alt="Shirube Library View" width="850">
   <p><i>Your entire Japanese immersion library in one beautiful, offline workspace.</i></p>
 </div>
 
