@@ -57,7 +57,7 @@ Built-in WaniKani-style Spaced Repetition and native Discord Rich Presence integ
 
 ## ✨ Features
 
-* **Zero-Config Portability:** Shirube runs entirely offline. The massive 2.3GB Japanese dictionary is heavily compressed and embedded directly into the app, meaning there are no messy setup wizards or databases to configure.
+* **Zero-Config Portability:** Shirube runs entirely offline. The massive Japanese dictionary is heavily compressed and embedded directly into the app.
 * **The Command Center:** A completely overhauled analytics dashboard featuring a GitHub-style daily immersion heatmap, JLPT progression charts (N5-N1), and real-time Jōyō/Kyōiku Kanji mastery tracking.
 * **Smart Script Importer:** Drag and drop game scripts, TXT files, EPUBs, or subtitle files (SRT/ASS). The smart regex engine automatically detects dialogue formatting, merges multi-line text, ignores stage directions, and cleans it up into beautiful study cards.
 * **Spotlight SRS:** Instantly harvest words and add them to your SRS deck directly from the global Spotlight Search (`Cmd+K` / `Ctrl+K`) no matter where you are in the app.
@@ -66,7 +66,7 @@ Built-in WaniKani-style Spaced Repetition and native Discord Rich Presence integ
 ## 🤝 Community & Integrations
 
 * **Discord Rich Presence:** Show off your immersion grind! Shirube natively hooks into your local Discord client to broadcast the media you are studying, your live elapsed time, and your daily mined cards.
-* **Discord Gengo Export:** Click the chat icon (💬) on any dialogue or vocabulary card to instantly copy a perfectly formatted Markdown snippet (with context sentences and translations) straight to your favorite Discord `#mining-finds` channel.
+* **Discord Gengo Export:** Click the chat icon (💬) on any dialogue or vocabulary card to instantly copy a perfectly formatted Markdown snippet (with context sentences and translations) straight to your favorite Discord channel.
 * **High-Fidelity Audio (VOICEVOX):** Ditch the robotic browser voices. Shirube natively bridges with the free [VOICEVOX](https://voicevox.hiroshiba.jp/) engine to provide studio-quality Japanese voice actors.
 * **Auto-Sync to Anki:** Prefer Anki over Shirube's built-in SRS? Enable the AnkiConnect integration in Settings, and Shirube will silently build your Anki deck in the background as you mine.
 
