@@ -1,20 +1,18 @@
 # 🌸 Shirube
 
-**The Ultimate Offline Japanese Immersion & Mining Environment**
-
 Shirube is a standalone, hybrid desktop application designed to bridge the gap between reading native Japanese media and actively retaining vocabulary through Spaced Repetition (SRS). Read your books, watch your shows, mine your words, and track your mastery—all in one highly integrated workspace.
 
 ---
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e8355f55-57f1-4f4f-9869-173076387a20" alt="Shirube Library View" width="850">
-  <p><i>Your entire Japanese immersion library in one beautiful, offline workspace.</i></p>
+  <p><i>Your entire Japanese immersion library in one offline workspace.</i></p>
 </div>
 
 <br>
 
 ## 📖 Read, Mine, and Master
-Drop in any game script, EPUB, or subtitle file. Shirube automatically generates furigana and provides instant, offline dictionary lookups. Never lose your context again.
+Drop in any game script, EPUB, or subtitle file. Shirube automatically generates furigana and provides instant, offline dictionary lookups. 
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/68ae031c-af9e-4da7-9807-cbee75465140" alt="Shirube Study Room and Hover Dictionary" width="850">
@@ -24,7 +22,7 @@ Drop in any game script, EPUB, or subtitle file. Shirube automatically generates
 <br>
 
 ## 📊 The Command Center
-Track your exact immersion time, vocabulary growth, and daily mining habits with a gorgeous, GitHub-style activity heatmap and Jōyō/Kyōiku kanji mastery charts.
+Track your exact immersion time, vocabulary growth, and daily mining habits with a GitHub-style activity heatmap and Jōyō/Kyōiku kanji mastery charts.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/f744eee4-cccb-443f-baa0-b9f8c626395c" alt="Shirube Analytics Dashboard" width="850">
@@ -57,17 +55,17 @@ Built-in WaniKani-style Spaced Repetition and native Discord Rich Presence integ
 
 ## ✨ Features
 
-* **Zero-Config Portability:** Shirube runs entirely offline. The massive Japanese dictionary is heavily compressed and embedded directly into the app.
+* **Zero-Config Portability:** Shirube runs entirely offline. The Japanese dictionaries are heavily compressed and embedded directly into the app.
 * **The Command Center:** A completely overhauled analytics dashboard featuring a GitHub-style daily immersion heatmap, JLPT progression charts (N5-N1), and real-time Jōyō/Kyōiku Kanji mastery tracking.
-* **Smart Script Importer:** Drag and drop game scripts, TXT files, EPUBs, or subtitle files (SRT/ASS). The smart regex engine automatically detects dialogue formatting, merges multi-line text, ignores stage directions, and cleans it up into beautiful study cards.
+* **Smart Script Importer:** Drag and drop game scripts, TXT files, EPUBs, or subtitle files (SRT/ASS). The smart regex engine automatically detects dialogue formatting, merges multi-line text, ignores stage directions, and cleans it up into study cards.
 * **Spotlight SRS:** Instantly harvest words and add them to your SRS deck directly from the global Spotlight Search (`Cmd+K` / `Ctrl+K`) no matter where you are in the app.
-* **The Hybrid Server:** Open the "Network Access Link" from your library on your iPad or phone to read and mine from the couch while your PC silently handles the heavy database lifting.
+* **The Hybrid Server:** Open the "Network Access Link" from your library on your tablet or phone to read and mine from the couch while your PC silently handles the heavy database lifting.
 
 ## 🤝 Community & Integrations
 
-* **Discord Rich Presence:** Show off your immersion grind! Shirube natively hooks into your local Discord client to broadcast the media you are studying, your live elapsed time, and your daily mined cards.
-* **Discord Gengo Export:** Click the chat icon (💬) on any dialogue or vocabulary card to instantly copy a perfectly formatted Markdown snippet (with context sentences and translations) straight to your favorite Discord channel.
-* **High-Fidelity Audio (VOICEVOX):** Ditch the robotic browser voices. Shirube natively bridges with the free [VOICEVOX](https://voicevox.hiroshiba.jp/) engine to provide studio-quality Japanese voice actors.
+* **Discord Rich Presence:** Shirube natively hooks into your local Discord client to broadcast the media you are studying, your live elapsed time, and your daily mined cards.
+* **Discord Gengo Export:** Click the chat icon (💬) on any dialogue or vocabulary card to instantly copy a formatted Markdown snippet (with context sentences and translations) straight to your favorite Discord channel.
+* **High-Fidelity Audio (VOICEVOX):** Shirube natively bridges with the free [VOICEVOX](https://voicevox.hiroshiba.jp/) engine to provide studio-quality Japanese voice actors.
 * **Auto-Sync to Anki:** Prefer Anki over Shirube's built-in SRS? Enable the AnkiConnect integration in Settings, and Shirube will silently build your Anki deck in the background as you mine.
 
 ---
