@@ -25,7 +25,7 @@
 
 ---
 
-## 🟠 Phase 2: Active Immersion (The "Cinema" Update)
+## 🟠 Phase 2: Active Immersion
 ### v4.0 - Integrated Media Player & Reading Room
 * **Cinema Room:** A native local video player utilizing the HTML5 `<video>` tag. Users drag an MP4/MKV and a subtitle file into Shirube.
 * **Interactive Subs:** Render an interactive subtitle overlay. Clicking a word auto-pauses the video and triggers the dictionary hover card.
@@ -36,7 +36,7 @@
 
 ---
 
-## 🔴 Phase 3: The Live Game Engine (GSM Inspired)
+## 🔴 Phase 3: The Live Game Engine 
 ### v5.0 - Text Hooking Pipeline
 * **Live Clipboard & WebSocket Listeners:** A background Go routine that listens to tools like Textractor. 
 * **Real-Time Mining:** As the user plays a visual novel, the text streams instantly into Shirube's Study Room, automatically generating furigana, translations, and Voicevox audio on the fly.
@@ -44,7 +44,7 @@
 
 ---
 
-## 🟣 Phase 4: Hardware & Vision (Kamui Inspired)
+## 🟣 Phase 4: Hardware & Vision 
 ### v6.0 - The OCR Ecosystem
 * **Direct Capture Card Integration:** Tap directly into the OS hardware libraries (DirectShow/MediaFoundation) via Go to pull video feeds directly from a capture card, bypassing OBS entirely.
 * **Local Video OCR:** Run a highly precise, lightweight local OCR engine over the capture card feed to pull Kanji straight off console gameplay (Switch/PS5) and pipe it directly into the hover dictionary.
