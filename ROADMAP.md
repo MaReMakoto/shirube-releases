@@ -9,19 +9,19 @@
 * **Phase 1 Done**
 
 ---
-~~
-## 🟡 Phase 1: Foundation & Independence
-### v3.1.5 - The Architecture Overhaul
-* **Modular Codebase:** Refactor the massive monolithic files (`main.js`, `main.go`) into clean, object-oriented, and modular components (e.g., `audio.js`, `srs.js`, `api.go`, `db.go`).
-* **Component Audit:** Establish a clean baseline for the current tokenizer, de-inflector, and dictionary databases before adding new intelligence features.
 
-### v3.2 - The Export Engine
-* **Native `.apkg` Generation:** Build a Go-based Anki package generator to create standalone `.apkg` files directly from the Vault. Removes the dependency on Anki-Connect for users who want to back up, share, or import decks into AnkiWeb/AnkiMobile.
+## ~~🟡 Phase 1: Foundation & Independence~~
+### ~~v3.1.5 - The Architecture Overhaul~~
+* ~~**Modular Codebase:** Refactor the massive monolithic files (`main.js`, `main.go`) into clean, object-oriented, and modular components (e.g., `audio.js`, `srs.js`, `api.go`, `db.go`).~~
+* ~~**Component Audit:** Establish a clean baseline for the current tokenizer, de-inflector, and dictionary databases before adding new intelligence features.~~
 
-### v3.3 - Advanced SRS Mechanics
-* **Review Forecasting:** Introduce a "Next Review Due" UI component. Provide users with a visual timeline and specific counts for reviews due later today, tomorrow, and over the next week to help them pace their lessons.
-* **Dedicated Kanji SRS:** Expand from a vocabulary-first miner into a comprehensive character mastery tool. Build an independent Spaced Repetition queue exclusively for Kanji, tracking Onyomi, Kunyomi, and meanings separately from standard dialogue cards.
-~~
+### ~~v3.2 - The Export Engine~~
+* ~~**Native `.apkg` Generation:** Build a Go-based Anki package generator to create standalone `.apkg` files directly from the Vault. Removes the dependency on Anki-Connect for users who want to back up, share, or import decks into AnkiWeb/AnkiMobile.~~
+
+### ~~v3.3 - Advanced SRS Mechanics~~
+* ~~**Review Forecasting:** Introduce a "Next Review Due" UI component. Provide users with a visual timeline and specific counts for reviews due later today, tomorrow, and over the next week to help them pace their lessons.~~
+* ~~**Dedicated Kanji SRS:** Expand from a vocabulary-first miner into a comprehensive character mastery tool. Build an independent Spaced Repetition queue exclusively for Kanji, tracking Onyomi, Kunyomi, and meanings separately from standard dialogue cards.~~
+
 
 ---
 
