@@ -6,8 +6,10 @@
 * **Features:** SQLite media library, WanaKana typing, dynamic offline hover dictionary, Google auto-Kanji drawing pad, native OS hotkeys, Voicevox TTS engine, and Anki-Connect integration.
 * **Under the Hood:** Custom de-inflector engine currently implemented for baseline grammar parsing.
 
----
+* **Phase 1 Done**
 
+---
+~~
 ## 🟡 Phase 1: Foundation & Independence
 ### v3.1.5 - The Architecture Overhaul
 * **Modular Codebase:** Refactor the massive monolithic files (`main.js`, `main.go`) into clean, object-oriented, and modular components (e.g., `audio.js`, `srs.js`, `api.go`, `db.go`).
@@ -19,6 +21,7 @@
 ### v3.3 - Advanced SRS Mechanics
 * **Review Forecasting:** Introduce a "Next Review Due" UI component. Provide users with a visual timeline and specific counts for reviews due later today, tomorrow, and over the next week to help them pace their lessons.
 * **Dedicated Kanji SRS:** Expand from a vocabulary-first miner into a comprehensive character mastery tool. Build an independent Spaced Repetition queue exclusively for Kanji, tracking Onyomi, Kunyomi, and meanings separately from standard dialogue cards.
+~~
 
 ---
 
