@@ -1,95 +1,117 @@
-# 🌸 Shirube
+# Shirube
 
-Shirube is a standalone, hybrid desktop application designed to bridge the gap between reading native Japanese media and actively retaining vocabulary through Spaced Repetition (SRS). Read your books, watch your shows, mine your words, and track your mastery—all in one highly integrated workspace.
+Shirube is a standalone desktop application that combines reading native Japanese media with a Spaced Repetition System (SRS) for vocabulary retention. It functions as a centralized environment for media tracking, text parsing, offline dictionary lookups, and flashcard management.
 
 ---
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e8355f55-57f1-4f4f-9869-173076387a20" alt="Shirube Library View" width="850">
-  <p><i>Your entire Japanese immersion library in one offline workspace.</i></p>
+  <p><i>The main library interface for tracking Japanese media.</i></p>
 </div>
 
 <br>
 
-## 📖 Read, Mine, and Master
-Drop in any game script, EPUB, or subtitle file. Shirube automatically generates furigana and provides instant, offline dictionary lookups. 
+## 📖 Core Functionality
+
+Shirube is built to process raw Japanese text and convert it into actionable study material. 
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/68ae031c-af9e-4da7-9807-cbee75465140" alt="Shirube Study Room and Hover Dictionary" width="850">
-  <p><i>One-click SRS mining with integrated JLPT data, audio generation, and automatic context tracking.</i></p>
+  <p><i>The Study Room parsing text with the integrated offline dictionary.</i></p>
 </div>
 
 <br>
 
-## 📊 The Command Center
-Track your exact immersion time, vocabulary growth, and daily mining habits with a GitHub-style activity heatmap and Jōyō/Kyōiku kanji mastery charts.
+### Media & Text Parsing
+* **File Importer:** Import `.epub`, `.srt`, `.ass`, `.txt`, or `.csv` files. The regex engine formats the text into line-by-line dialogue cards, filtering out standard stage directions.
+* **Furigana Generation:** Processes raw Japanese text to automatically generate Furigana using a localized NLP engine (Kagome).
+* **Inline Editing:** Correct OCR scanning errors directly on the dialogue cards. Editing a card automatically regenerates the Furigana and translation.
+* **Chapter Organization:** Group parsed scripts into custom tabs (e.g., by chapter or episode) to manage large files.
+* **Offline Dictionary:** Hold `Shift` and hover over any Japanese word to view its reading and meaning. Features both English and Japanese-to-Japanese definitions.
+* **Spotlight Search:** Press `Cmd+K` / `Ctrl+K` to open a global dictionary search overlay from any view in the application.
+
+### Spaced Repetition System (SRS)
+* **Vocab & Kanji Tracking:** Save words directly from the dictionary popup to your SRS deck. The system captures the dictionary form, reading, meaning, and the exact context sentence it was found in.
+* **Review Algorithm:** Uses a scheduled 9-stage spacing algorithm (Levels 0-8, from Learning to Burned) to schedule reviews based on accuracy.
+* **Auto-Kana Input:** During reviews, typed Romaji is automatically converted to Hiragana/Katakana.
+* **Configurable Settings:** Adjust the daily limit for new vocabulary, change the SRS pacing multiplier (0.5x to 1.5x), and toggle between strict or flexible grading for Kanji readings.
+
+### Learning Hub & Kanji Pad
+* **Kanji Drawing Pad:** Draw unrecognized characters on the canvas. The application recognizes the strokes and provides the Onyomi, Kunyomi, meaning, and JLPT level.
+* **Compendium:** Browse a master list of Kanji categorized by JLPT level, Japanese School Grade, or WaniKani level, and add them manually to your SRS queue.
+
+<br>
+
+## 📊 Analytics Dashboard
+
+The Command Center provides visual analytics based on your reading and review history.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/f744eee4-cccb-443f-baa0-b9f8c626395c" alt="Shirube Analytics Dashboard" width="850">
-  <p><i>Visualize your fluency journey across N5-N1 JLPT levels and real-time media statuses.</i></p>
+  <p><i>The analytics dashboard tracking immersion metrics and JLPT progress.</i></p>
 </div>
 
 <br>
 
-## ⚡ Power-User Tools
-Built-in WaniKani-style Spaced Repetition and native Discord Rich Presence integration keep you accountable and connected to the community.
+* **Activity Heatmap:** A daily tracker that logs the volume of dialogue lines parsed and vocabulary cards mined.
+* **Review Forecast:** Displays the exact number of SRS reviews due currently, later today, tomorrow, and over the next 7 days.
+* **JLPT Progression:** Cross-references your harvested vocabulary and Kanji against standard N5-N1 databases to chart your coverage of each level.
+* **Overall Kanji Mastery:** Progress bars tracking your completion of the standard 1,026 Kyōiku (Elementary) and 2,136 Jōyō (Adult Literacy) Kanji lists.
+* **Time Tracking:** A built-in stopwatch in the Study Room logs your active reading time, which is aggregated on the dashboard.
+
+<br>
+
+## ⚡ Architecture & Integrations
 
 | Built-in Spaced Repetition | Discord Rich Presence |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/9ee47c29-7820-4a58-acd8-8173b5ccdd72" width="400" alt="SRS Flashcard"> | <img src="https://github.com/user-attachments/assets/9be604bf-86a7-4163-8a8d-088297067852" width="400" alt="Discord Status"> |
-| *Level up your vocabulary with localized, high-fidelity VOICEVOX audio and smart typo-forgiveness.* | *Show off your current immersion media, elapsed time, and daily mined cards automatically.* |
+| *The native review interface testing meaning and context.* | *Discord RPC broadcasting current media and daily mined cards.* |
 
 <br>
 
-<div align="center">
-  <h3>🌸 Your Entire Japanese World, Anywhere in the House</h3>
-  <p>Read on the couch, mine from your iPad, or review your cards on your phone. Shirube turns your PC into a hybrid immersion server, seamlessly adapting to every screen.</p>
-</div>
+* **Local Network Server (Hybrid Mode):** The desktop application hosts a local web server. By navigating to the provided local IP address on a mobile device or tablet (secured via an auto-generated token), you can access the application interface from a mobile browser while the desktop handles the database processing.
+* **Cover Art APIs:** Automatically fetches cover art for your library entries using the Twitch/IGDB API (Games), TMDb (TV), AniList (Anime/Manga), and iTunes (Podcasts/Audiobooks).
+* **Discord Rich Presence:** Connects to your local Discord client to display the media you are currently reading, elapsed time, and daily mined card count.
+* **Discord Markdown Export:** A dedicated button on dialogue and vocabulary cards copies a pre-formatted Markdown snippet to your clipboard for sharing in chat applications.
+* **VOICEVOX TTS:** Integrates with the local [VOICEVOX](https://voicevox.hiroshiba.jp/) application to generate synthesized native Japanese audio for dialogue lines and vocabulary words.
+* **Anki Integration:** * **Export:** Generate standard `.apkg` files from your SRS Vault to import into Anki.
+  * **Live Sync:** Enable the AnkiConnect integration to automatically push newly mined cards to your desktop Anki application in the background.
+
+<br>
 
 <div align="center">
   <img src="YOUR_CROSS_PLATFORM_ECOSYSTEM_BANNER_LINK_HERE.png" alt="Shirube Cross-Platform Ecosystem: Monitor, iPad, and iPhone Views" width="950">
-  <p><i>The native desktop experience adapted to the device in your hand. PC handles the data, mobile devices handle the immersion.</i></p>
+  <p><i>The UI adapts to desktop and mobile browser environments via the Hybrid Server.</i></p>
 </div>
 
 <br>
-
-## ✨ Features
-
-* **Zero-Config Portability:** Shirube runs entirely offline. The Japanese dictionaries are heavily compressed and embedded directly into the app.
-* **The Command Center:** A completely overhauled analytics dashboard featuring a GitHub-style daily immersion heatmap, JLPT progression charts (N5-N1), and real-time Jōyō/Kyōiku Kanji mastery tracking.
-* **Smart Script Importer:** Drag and drop game scripts, TXT files, EPUBs, or subtitle files (SRT/ASS). The smart regex engine automatically detects dialogue formatting, merges multi-line text, ignores stage directions, and cleans it up into study cards.
-* **Spotlight SRS:** Instantly harvest words and add them to your SRS deck directly from the global Spotlight Search (`Cmd+K` / `Ctrl+K`) no matter where you are in the app.
-* **The Hybrid Server:** Open the "Network Access Link" from your library on your tablet or phone to read and mine from the couch while your PC silently handles the heavy database lifting.
-
-## 🤝 Community & Integrations
-
-* **Discord Rich Presence:** Shirube natively hooks into your local Discord client to broadcast the media you are studying, your live elapsed time, and your daily mined cards.
-* **Discord Gengo Export:** Click the chat icon (💬) on any dialogue or vocabulary card to instantly copy a formatted Markdown snippet (with context sentences and translations) straight to your favorite Discord channel.
-* **High-Fidelity Audio (VOICEVOX):** Shirube natively bridges with the free [VOICEVOX](https://voicevox.hiroshiba.jp/) engine to provide studio-quality Japanese voice actors.
-* **Auto-Sync to Anki:** Prefer Anki over Shirube's built-in SRS? Enable the AnkiConnect integration in Settings, and Shirube will silently build your Anki deck in the background as you mine.
 
 ---
 
 ## 🚀 Installation
 
-Shirube is a 100% standalone, portable application. Your database is strictly yours and is stored safely in your local user folder. 
+Shirube is a portable application. The required databases and dictionaries are embedded directly into the executable.
 
 ### 🍏 macOS (Apple Silicon & Intel)
 1. Download and extract the `Shirube-macOS.zip` file from the latest Release.
-2. Drag `Shirube.app` into your **Applications** folder.
-3. **Security Bypass:** Because Shirube is an independent indie app, macOS Gatekeeper might block it the first time. To open it, **Right-Click (or Control-Click)** the app and select **Open**. Click "Open" again on the warning prompt.
-*(Note: On the very first launch, the app may take a few seconds to extract its internal dictionary. Subsequent boots will be instant).*
+2. Move `Shirube.app` into your **Applications** folder.
+3. **Security Bypass:** As an unsigned application, macOS Gatekeeper may block the initial launch. To open it, **Right-Click (or Control-Click)** the application and select **Open**. Click "Open" again on the subsequent prompt.
+*(Note: On the first launch, the application requires a few seconds to extract its internal dictionary. Subsequent launches will be instantaneous).*
 
 ### 🪟 Windows (x64)
 1. Download the `Shirube.exe` file from the latest Release.
-2. Move it to a folder of your choice (e.g., your Desktop or a dedicated Shirube folder).
-3. **Security Bypass:** Windows Defender SmartScreen may display a blue "Windows protected your PC" warning. Click **More info**, then click **Run anyway**.
+2. Move it to a directory of your choice.
+3. **Security Bypass:** Windows Defender SmartScreen may flag the executable. Click **More info**, then select **Run anyway**.
 
 ---
 
-## 💾 Data & Backups
+## 💾 Data Management
 
-Your dictionaries, media, and SRS progress are securely saved in your system's `AppData` (Windows) or `Application Support` (Mac) folder as raw SQLite databases. 
+User data (dictionaries, media library, settings, and SRS progress) is stored locally as SQLite databases in the following directories:
+* **Windows:** `%APPDATA%\ImmersionTracker`
+* **macOS:** `~/Library/Application Support/ImmersionTracker`
 
-* **To update the app:** Simply delete the old `.exe` or `.app` and replace it with the new one. Your data is stored externally and will load instantly.
-* **To backup:** Open Shirube -> Settings -> Data Management, and click **Export Complete Backup**.
+**Updating:** To update the application, delete the old `.exe` or `.app` file and replace it with the new version. Your external database files will not be affected.
+
+**Backups:** You can export your entire database as a `.json` backup file by navigating to **Settings -> Data Management -> Export JSON Backup**.
