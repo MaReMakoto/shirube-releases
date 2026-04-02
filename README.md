@@ -109,8 +109,10 @@ Shirube is a portable application. The required databases and dictionaries are e
 ## 💾 Data Management
 
 User data (dictionaries, media library, settings, and SRS progress) is stored locally as SQLite databases in the following directories:
-* **Windows:** `%APPDATA%\ImmersionTracker`
-* **macOS:** `~/Library/Application Support/ImmersionTracker`
+* **Windows:** `%APPDATA%\Shirube`
+* **macOS:** `~/Library/Application Support/Shirube`
+
+*(Note for returning users: If you are upgrading from V3 or earlier, Shirube will automatically and safely migrate your old `ImmersionTracker` folder on first boot!)*
 
 **Updating:** To update the application, delete the old `.exe` or `.app` file and replace it with the new version. Your external database files will not be affected.
 
