@@ -26,6 +26,8 @@
 ---
 
 ## 🟠 Phase 2: Active Immersion
+### v4.0 - Comprehensive overhaul of the underlying architecture, focusing on data integrity, network security, and interface stability.
+
 ### v4.1 - Integrated Media Player & Reading Room
 * **Cinema Room:** A native local video player utilizing the HTML5 `<video>` tag. Users drag an MP4/MKV and a subtitle file into Shirube.
 * **Interactive Subs:** Render an interactive subtitle overlay. Clicking a word auto-pauses the video and triggers the dictionary hover card.
