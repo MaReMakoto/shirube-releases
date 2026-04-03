@@ -26,12 +26,12 @@
 ---
 
 ## 🟠 Phase 2: Active Immersion
-### v4.0 - Integrated Media Player & Reading Room
+### v4.1 - Integrated Media Player & Reading Room
 * **Cinema Room:** A native local video player utilizing the HTML5 `<video>` tag. Users drag an MP4/MKV and a subtitle file into Shirube.
 * **Interactive Subs:** Render an interactive subtitle overlay. Clicking a word auto-pauses the video and triggers the dictionary hover card.
 * **Zero-Setup Native Reader:** Upgrade the EPUB/TXT parser into a dedicated "Reading Mode" that also accepts text-based `.pdf` files. Read native text directly in the app and click any word to harvest it without leaving the flow of the book.
 
-### v4.1 - Granular Analytics
+### v4.2 - Granular Analytics
 * **Per-Media Statistics:** Link harvested vocabulary directly to specific `mediaIds`. Clicking a game in the library will show exactly how many N5-N1 words were learned from that specific playthrough, unique Kanji encountered, and playtime-to-vocab ratios.
 
 ---
